@@ -1,11 +1,11 @@
-var readlineSync = require("readline-sync");
-let vendingUser = require("./utility/vendingUtils");
+let vendingUser = require("../utility/vendingUtils");
+var utility = new vendingUser();
 
+function main() {
 
+    var amountTemp = utility.takeInputs();
+    var amount = parseInt(amountTemp);
+    utility.countCurrency(amount);
 
-var amountTemp= readlineSync.question("Enter the amount: ");
-var amount = parseInt(amountTemp);
-new vendingUser(amount); 
-var utility = new vendingUser(amount);
-
-utility.countCurrency(amount);
+}
+main();

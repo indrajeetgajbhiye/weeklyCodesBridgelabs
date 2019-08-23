@@ -1,4 +1,5 @@
 var readLineSync= require("readline-sync");
+
 var distance, x, y;
 x = readLineSync.question("type the value of x: ");
 y = readLineSync.question("type the value of y: ");
