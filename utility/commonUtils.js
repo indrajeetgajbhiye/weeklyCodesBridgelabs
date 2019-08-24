@@ -4,4 +4,12 @@ module.exports = {
         var inputValue = readlineSync.question(sentence);
         return parseInt(inputValue);
     },
+    inputFunctionFloat : function(sentence){
+        var inputValue = readlineSync.question(sentence);
+        return parseFloat(inputValue);
+    },
+    inputFunctionString : function(sentence){
+        var inputValue = readlineSync.question(sentence);
+        return inputValue;
+    }
 }
