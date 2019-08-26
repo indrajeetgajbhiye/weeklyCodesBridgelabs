@@ -14,8 +14,8 @@
  * 
  * @description     
  *  
- * @file            :   gamblerUtils.js
- * @overview        :   Required file to save user defined functions for multipurpose use
+ * @file            :   binary.js
+ * @overview        :   given file is used to find the binary swaps
  * @module          :
  * @author          :   Indrajeet Gajbhiye indrajetgajbhiye@gmail.com
  * @version         :   
