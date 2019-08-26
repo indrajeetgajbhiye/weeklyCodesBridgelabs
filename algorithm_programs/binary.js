@@ -82,7 +82,7 @@ main = function(number){
 main(number);
 /**
  * @description module.exports exports functions as local objects 
- * /
+ */
 module.exports = {
     main,
 }
