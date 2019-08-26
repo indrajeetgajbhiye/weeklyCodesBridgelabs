@@ -80,7 +80,9 @@ main = function(number){
  * @description calling th function main
  */
 main(number);
-
+/**
+ * @description module.exports exports functions as local objects 
+ * /
 module.exports = {
     main,
 }
