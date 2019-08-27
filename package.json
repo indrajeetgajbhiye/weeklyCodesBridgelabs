@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "n-readlines": "^1.0.0"
   },
   "directories": {
     "test": "test"

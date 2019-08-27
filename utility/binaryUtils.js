@@ -22,9 +22,9 @@ nibbleSwap = function(number)
         }
     }
     if(ones==1)
-    console.log("the number is a power of 2");
+        console.log("the number is a power of 2");
     else
-    console.log("the number is not a power of 2");
+        console.log("the number is not a power of 2");
     return number;
 }
 swapIt = function(number,newNumber){

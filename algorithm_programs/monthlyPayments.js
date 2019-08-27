@@ -34,18 +34,60 @@
  * 
  * So, whatever you assign to module.exports or exports, will be exposed as a module.
  */
-var readlineSync = require("readline-sync");
+/**
+ * @description import the file from ../utility/commonUtils and store it in object coomon
+ * @let <object> common
+ */
 let common = require("../utility/commonUtils")
+/**
+ * @description import the file from ../utility/monthlyPaymentsUtils and store it in object coomon
+ * @let <object> monthlyPaymentsObj
+ */
 let monthlyPaymentObj = require("../utility/monthlyPaymentsUtils")
+/**
+ * @description definition of main function to run the driver file code
+ */
 function main (){
+/**
+ * @description declared variables to strore the inputs as principle amount, years, rate of interest
+ * @var {number} principle
+ * @var {number} years
+ * @var {number} rate
+ * @var {number} nMonths 
+ * @var {number} iRate
+ */
     var principle, years, rate, nMonths, iRate;
     console.log("******** Monthly Payments ********");
+/**
+ * @description getting thr input from calling coomon.inputfunction("string"), which takes string
+ *              as argument and returns number 
+ */
     principle = common.inputFunction("Enter the principle amount: ");
     years = common.inputFunction("Enter the no of years: ");
     rate = common.inputFunction("Enter the rate of interest: ");
+/**
+ * @description converting years into months, and rate of interest by formula 
+ * @var {number} nMonths
+ * @var {number} iRate
+ */
     nMonths = parseInt(12 * years);
     iRate = parseInt(rate / (12 * 100 ));
+/**
+ * @description calling function monthlyPaymentObj.monthlyPayment(principle, nMonths, iRate)
+ *              to count the monthly payment one need to make 
+ * @let {number} payment
+ */
     let payment = monthlyPaymentObj.monthlyPayment(principle, nMonths, iRate);
-    console.log(typeof(payment));
+/**
+ * @description returning a value to check in future
+ */
+    return payment;
 }
+/**
+ * @description calling function main()
+ */
 main();
+
+module.exports = {
+    main,
+}
