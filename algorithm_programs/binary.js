@@ -51,7 +51,7 @@ console.log('Enter the binary number');
  * @function inputFunctionString() takes argument string and returns string as which 
  *                                  is getting stored in @var number
  */
-var number = common.inputFunctionString('in bianary only');
+var number = common.inputFunctionString('in number');
 /**
  * JAVASCRIPT STYLE GUIDE - STATIC FUNCTION DECLARED
  * NOTES    - FUNCTION IS DEDCLARED IN THE DRIVER FILE ITSELF
