@@ -4,7 +4,7 @@ console.log('***** reading file *****');
 let link = require('../utility/linkedList');
 var linkObj = new link.linkList();
 var orderArray= fs.readFileSync('../fileRead/unOrderedListInputs.txt', 'utf-8').toString().split(" ");
-function check(){
+function check(orderArray){
     try {
         if(orderArray == false) throw 'Empty file'
         else 
@@ -27,12 +27,12 @@ function main(){
     var flag = linkObj.removeElement(wordGet);
     if(flag == -1){
         linkObj.add(wordGet);
-        linkObj.printList();
+        var text = linkObj.printList();
     }
     else {
-        linkObj.printList();
+        var text = linkObj.printList();
     }
-    fs.writeFileSync('../fileRead/unOrderedListInputs.txt', linkObj.printList());
+    fs.writeFileSync('../fileRead/unOrderedListInputs.txt', text);
     try{
         if(linkObj.printList == false) throw "Empty file writing";
         else throw 'file handled correctly';
