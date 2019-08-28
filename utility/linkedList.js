@@ -142,7 +142,7 @@ class linkList {
     printList() 
     { 
         var curr = this.head; 
-        var str = ""; 
+        let str = ""; 
         while (curr) { 
             str += curr.element + " "; 
             curr = curr.next; 
