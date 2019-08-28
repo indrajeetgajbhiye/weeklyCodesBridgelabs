@@ -33,7 +33,16 @@
  * So, whatever you assign to module.exports or exports, will be exposed as a module.
  */
 var readline = require('readline-sync');
-let anagramObj=require('../utility/anagramUtils');
+let anagramObj=require('../utility/permuteUtils');
 var str1 = readline.question("Enter string 1: ");
-var str2 = readline.question("Enter string 2: ");
-anagramObj.checkAnagram(str1, str2);
+var anagram = anagramObj.permut(str1);
+var k;
+//console.log(anagram);
+for(var i =1; anagram[i]!=null; i++){
+    try{
+        if(anagram [i] == str1) throw "its an anagram";
+    }
+    catch(err){
+        console.log(err);
+    }
+}
