@@ -3,7 +3,8 @@ let readlineSync = require('readline-sync');
 console.log('***** reading file *****');
 let link = require('../utility/linkedList');
 var linkObj = new link.linkList();
-var orderArray = fs.readFileSync('../fileRead/unOrderedList.txt', 'utf-8').toString().split(" ");
+var separators = [' ', '\n', ',', 'NaN',"0,"];
+var orderArray = fs.readFileSync('../fileRead/unOrderedListInputs.txt','utf-8').toString().split(new RegExp(separators.join('|'), 'g'));
 function check(){
     try {
         if(orderArray == false) throw 'Empty file'
@@ -22,7 +23,7 @@ function main(){
         //console.log("value of i  ",i);
     }
     linkObj.printList();
-    var wordGet = readlineSync.question("Enter the Word  :  ");
+    var wordGet = readlineSync.question("Enter the Word :");
     var flag = linkObj.removeElement(wordGet);
     if(flag == -1){
         linkObj.add(wordGet);
