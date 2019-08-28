@@ -44,9 +44,7 @@ class linkList {
             // creates a new node 
             var node = new nodeConst(element); 
             var curr, prev; 
-    
             curr = this.head; 
-    
             // add the element to the 
             // first index 
             if (index == 0) { 
@@ -55,7 +53,6 @@ class linkList {
             } else { 
                 curr = this.head; 
                 var it = 0; 
-    
                 // iterate over the list to find 
                 // the position to insert 
                 while (it < index) { 
@@ -63,7 +60,6 @@ class linkList {
                     prev = curr; 
                     curr = curr.next; 
                 } 
-    
                 // adding an element 
                 node.next = curr; 
                 prev.next = node; 
@@ -80,7 +76,6 @@ class linkList {
             var curr, prev, it = 0; 
             curr = this.head; 
             prev = curr; 
-    
             // deleting first element 
             if (index === 0) { 
                 this.head = curr.next; 
@@ -92,12 +87,10 @@ class linkList {
                     prev = curr; 
                     curr = curr.next; 
                 } 
-    
                 // remove the element 
                 prev.next = curr.next; 
             } 
             this.size--; 
-    
             // return the remove element 
             return curr.element; 
         } 
@@ -129,7 +122,6 @@ class linkList {
     { 
         var count = 0; 
         var current = this.head; 
-    
         // iterae over the list 
         while (current != null) { 
             // compare each element of the list 
@@ -158,7 +150,6 @@ class linkList {
         console.log(str); 
         return str;
     } 
-
 } 
 
 module.exports = {

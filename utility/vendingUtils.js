@@ -30,7 +30,7 @@ module.exports= class vendingMachine{
         return totalCount;
     }
     takeInputs(){
-        var inputAmount = readlineSync.question("Enter the amount: ");
+        var inputAmount = readlineSync.question("Enter the amount: ");  
         return parseInt(inputAmount);
     }
 

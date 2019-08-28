@@ -3,12 +3,11 @@ let readlineSync = require('readline-sync');
 console.log('***** reading file *****');
 let link = require('../utility/linkedList');
 var linkObj = new link.linkList();
-var orderArray= fs.readFileSync('../fileRead/unOrderedListInputs.txt', 'utf-8').toString().split(" ");
-function check(orderArray){
+var orderArray = fs.readFileSync('../fileRead/unOrderedList.txt', 'utf-8').toString().split(" ");
+function check(){
     try {
         if(orderArray == false) throw 'Empty file'
-        else 
-            main();
+        else throw 'File not empty'
     }
     catch(err){
         console.log(err);
@@ -34,15 +33,18 @@ function main(){
     }
     fs.writeFileSync('../fileRead/unOrderedListInputs.txt', text);
     try{
-        if(linkObj.printList == false) throw "Empty file writing";
+        if(text == false) throw "Empty file writing";
         else throw 'file handled correctly';
     }
     catch(err){
+        console.log(err);
         return err;
     }
 }
-check();
-
+var ch = check();
+if( ch == 'File not empty'){
+    main();
+}
 module.exports = {
     main,
     check,

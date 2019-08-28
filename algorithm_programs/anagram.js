@@ -43,6 +43,5 @@ for(var i =1; anagram[i]!=null; i++){
         if(anagram [i] == str1) throw "its an anagram";
     }
     catch(err){
-        console.log(err);
-    }
+        console.log(err)
 }

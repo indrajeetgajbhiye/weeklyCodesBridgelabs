@@ -1,15 +1,13 @@
 var fs =  require('fs');
-let readlineSync = require('readline-sync'); 
 let assert = require('chai').assert;
 let unOrderedListObj = require('../dataStructures/unOrderedList');
 var orderArray= fs.readFileSync('../fileRead/unOrderedListInputs.txt', 'utf-8').toString().split(" ");
+var text = unOrderedListObj.check(orderArray)
+console.log('>>>>>>>>>>>>',text);
 describe('unOrderedList file', function(){
-    describe('unOrderedList()', function(){
-        it('function should be a string', function(){
-            assert.equal(unOrderedListObj.check(orderArray), 'Empty file');
+    describe('main()', function(){
+        it('function should not be empty', function(){
+            assert.isEqual(unOrderedListObj.main(),'file handled correctly');
         });
-        // it('function should not be empty', function(){
-        //     assert.typeOf(orderArray, 'string');
-        // })
     });
 });
