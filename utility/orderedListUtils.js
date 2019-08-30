@@ -62,7 +62,7 @@ class OrderList{
  * @function {} constructor 
  * @description prints the start
  */
-    contructor(){      
+    constructor(){      
         console.log('***** Program Strated *****'); 
     }
     readFileFrom(){

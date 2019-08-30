@@ -4,6 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    {
+        "type": "node",
+        "request": "launch",
+        "name": "BankingCounter.js",
+        "program": "${workspaceFolder}/dataStructures/bankingCounter.js"
+    },
+        // {
+        //     "type": "node",
+        //     "request": "launch",
+        //     "name": "ArithMatic",
+        //     "program": "${workspaceFolder}/dataStructures/arithmaticStack.js"
+        // },
+        
+        
         {
             "type": "node",
             "request": "launch",

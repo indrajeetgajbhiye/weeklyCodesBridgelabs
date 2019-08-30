@@ -42,7 +42,7 @@ class Queue{
     size(){
         var i=1;
         var current = this.front;
-        while(current.next!= null){
+        while(current.next != null && current != null){
             i++;
             current = current.next;
         }

@@ -3,8 +3,8 @@ let readlineSync = require('readline-sync');
 var queue = new que.Queue();
 class Bank {
     constructor(totalAmount, size){
-        totalAmount = this.totalAmount;
-        size = this.size;
+        this.totalAmount = totalAmount;
+        this.size = size;
     }
     inputChoice(){
         var choice = readlineSync.question('press 1 to deposit ... 2 to withdraw');
@@ -18,12 +18,12 @@ class Bank {
         }
     }
     processBanking(){
-        var input = inputChoice();
+        var input = this.inputChoice();
         if(input == 1){
-            deposit();
+            this.deposit();
         }
         if(input == 2){
-            withdraw();
+            this.withdraw();
         }
         else {
             input = this.processBanking();
@@ -31,12 +31,12 @@ class Bank {
     }
     deposit(){
         var amount = readlineSync.question('Enter the amount you want to deposit');
-        if(queue.size()<size && amount > 0){
+        if(queue.size() < this.size && amount > 0){
             queue.enqueue(amount);
-            totalAmount=totalAmount+amount;
-            size--;
+            this.totalAmount=this.totalAmount+amount;
+            this.size--;
         }
-        if(queue.size()<size && amount < 0){
+        if(queue.size()<this.size && amount < 0){
             this.deposit();
         }
         else{
@@ -45,17 +45,21 @@ class Bank {
     }
     withdraw(){
         var amount = readlineSync.question('Enter the amount you want to withdraw');
-        if(amount < totalAmount && amount > 0 && queue.size > size){
+        if(amount < this.totalAmount && amount > 0 && queue.size() > this.size){
             queue.dequeue();
         }
-        if(amount < totalAmount && amount < 0 && queue.size > size){
+        if(amount < this.totalAmount && amount < 0 && queue.size() > this.size){
             
         }
-        if(amount > totalAmount && amount > 0 && queue.size > size){
+        if(amount > this.totalAmount && amount > 0 && queue.size() > this.size){
             
         }
         else {
             console.log('Sorry limit reached');
         }
     }
+}
+
+module.exports = {
+    Bank,
 }

@@ -1,4 +1,8 @@
 let objectof = require('../utility/orderedListUtils');
-var k = new objectof.OrderList();
-console.log(k.convertIntoNumbers());
-k.takeInput();
+var orderClassObj = new objectof.OrderList();
+orderClassObj.addNumber();
+var text = orderClassObj.readFileFrom();
+for(i in text){
+    if(text[i]!=0)
+    console.log(text[i]);
+}

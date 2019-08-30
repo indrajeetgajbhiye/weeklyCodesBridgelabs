@@ -1,4 +1,3 @@
-var readlineSync = require("readline-sync");
 module.exports = {
     dayOfWeek : function( year, month, day){
         var tick = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4];
