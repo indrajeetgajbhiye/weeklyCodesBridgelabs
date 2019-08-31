@@ -23,10 +23,12 @@ checkAnagram= function(str1, str2) {
       if (flag == str1.length)
         console.log("Anagrams");
       else
-        console.log("Not Anagrams");;
+        console.log("Not Anagrams");
+        return 0;
     }
     else
-      console.log("Not Anagrams");;
+      console.log("Not Anagrams");
+      return 0;
 }
 
 
