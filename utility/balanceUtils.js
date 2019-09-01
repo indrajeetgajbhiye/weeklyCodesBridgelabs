@@ -1,20 +1,30 @@
 var stack = require('../utility/stack');
 var stackObj = new stack.Stack();
-var expression = '(9+2)*(6-2)';
-for(i in expression){
-    if(expression[i]=='('){
-        stackObj.push(expression[i]);
+function main(expression){
+    var leftCount = 0;
+    var rightCount = 0;
+    for(i in expression){
+        if(expression[i]=='('){
+            stackObj.push(expression[i]);
+            leftCount++;
+        }
+        if(expression[i]==')'){
+            stackObj.pop();
+            rightCount++;
+        }
+        else 
+            continue;
     }
-    if(expression[i]==')'){
-        stackObj.pop();
+    if(stackObj.peek()!='(' && stackObj.peek()!= ')' && leftCount == rightCount){
+        console.log('Balanced paranthesis')
     }
-    else 
-        continue;
+    else {
+        console.log('not balanced ')
+    }
+    console.log(stackObj.peek());
 }
-if(stackObj.peek()!='(' && stackObj.peek()!= ')'){
-    console.log('Balanced paranthesis')
+main();
+
+module.exports ={
+    main,
 }
-else {
-    console.log('not balanced ')
-}
-console.log(stackObj.peek());
