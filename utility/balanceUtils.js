@@ -3,6 +3,7 @@ var stackObj = new stack.Stack();
 function main(expression){
     var leftCount = 0;
     var rightCount = 0;
+    var err;
     for(i in expression){
         if(expression[i]=='('){
             stackObj.push(expression[i]);
@@ -16,12 +17,15 @@ function main(expression){
             continue;
     }
     if(stackObj.peek()!='(' && stackObj.peek()!= ')' && leftCount == rightCount){
-        console.log('Balanced paranthesis')
+        err = 'Balanced paranthesis';
+        console.log(err);
     }
     else {
-        console.log('not balanced ')
+        err = 'Not Balanced';
+        console.log(err);
     }
     console.log(stackObj.peek());
+    return err;
 }
 main();
 

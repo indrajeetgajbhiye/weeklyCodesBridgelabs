@@ -29,7 +29,13 @@ function startProgram (){
         }
         else {
             startProgram();
+            return err;
         }
     }
 }
 startProgram();
+
+module.exports = {
+    startProgram,
+    main,
+}
