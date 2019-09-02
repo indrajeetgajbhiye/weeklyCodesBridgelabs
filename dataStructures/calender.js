@@ -8,7 +8,6 @@ function main(month, year){
     }
     if(month<13){
         var dayOfWeekCount = parseInt(calenderUtils.firstDayOfWeek(year, month));
-        //console.log("day of week is ", calenderUtils.dayFinder(dayOfWeekCount));
         calenderUtils.monthMaker(dayOfWeekCount,arrMonth, month, year);
     }
     else {
@@ -26,6 +25,7 @@ function startProgram (){
     catch (err){
         if(err==true){
             main(month, year);
+            return err;
         }
         else {
             startProgram();
