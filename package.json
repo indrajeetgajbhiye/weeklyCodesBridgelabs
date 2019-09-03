@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true"
+    "test": "mocha || true",
+    "pretest": "eslint --ignore-path .gitignore ."
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,8 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-strongloop": "^2.1.0",
     "mocha": "^6.2.0",
     "n-readlines": "^1.0.0"
   },
