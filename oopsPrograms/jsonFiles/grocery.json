@@ -1,0 +1,15 @@
+{
+    "rice" :[{
+        "riceName" : "charminar",
+        "riceWeight" : "9",
+        "ricePrice" : "94"
+    },{
+        "riceName" : "basmati",
+        "riceWeight" : "50",
+        "ricePrice" : "195"
+    },{
+        "riceName" : "pulaw basmati",
+        "riceWeight" : "20",
+        "ricePrice" : "110"
+    }
+]}
