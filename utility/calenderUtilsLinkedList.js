@@ -1,3 +1,5 @@
+var queueObj = require('../utility/queue');
+var queue = new queueObj.Queue();
 class Calender{
     constructor(){
         this.tick = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4];
@@ -34,7 +36,7 @@ class Calender{
                         this.monthPrint[i][j] = addDate.toString();
                         addDate++;
                     }
-                    if(addDate<=10 && addDate<arrMonth[month-1]){
+                    if(addDate<=10 && addDate<arrMonth[month]){
                         arrText+=this.monthPrint[i][j]+'  ';
                     }
                     else{
@@ -42,10 +44,12 @@ class Calender{
                     }
                 }
             }
-            console.log(arrText);
+            queue.enqueue(arrText);
+            console.log(queue.printQueue());
             arrText='';
         }
     }
+    
 }
 module.exports = {
     Calender,
