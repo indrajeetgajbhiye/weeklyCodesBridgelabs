@@ -199,4 +199,4 @@ class Node {
   var hash = new HashTable();
   hash.insert('James Hamann', 30); // Will create a bucket at hash.storage[9] and insert list with node of key, value
   hash.insert('James Hamann', 35); // Will insert new node onto list at same bucket with new key value pair
-  
+  8*/

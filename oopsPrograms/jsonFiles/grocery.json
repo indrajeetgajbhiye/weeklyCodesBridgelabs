@@ -1,15 +1,41 @@
 {
     "rice" :[{
-        "riceName" : "charminar",
-        "riceWeight" : "9",
-        "ricePrice" : "94"
+        "name" : "charminar",
+        "weight" : "9",
+        "price" : "94"
     },{
-        "riceName" : "basmati",
-        "riceWeight" : "50",
-        "ricePrice" : "195"
+        "name" : "basmati",
+        "weight" : "50",
+        "price" : "195"
     },{
-        "riceName" : "pulaw basmati",
-        "riceWeight" : "20",
-        "ricePrice" : "110"
-    }
-]}
+        "name" : "pulaw basmati",
+        "weight" : "20",
+        "price" : "110"
+    }],
+    "pulses" : [{
+        "name" : "moong",
+        "weight" : "9",
+        "price" : "120"
+    },{
+        "name" : "chana",
+        "weight" : "40",
+        "price" : "100"
+    },{
+        "name" : "masoor",
+        "weight" : "20",
+        "price" : "105"
+    }],
+    "wheats" : [{
+        "name" : "bhalia",
+        "weight" : "15",
+        "price" : "65"
+    },{
+        "name" : "gluten",
+        "weight" : "40",
+        "price" : "50"
+    },{
+        "name" : "gluten-free",
+        "weight" : "20",
+        "price" : "90"
+    }]
+}
