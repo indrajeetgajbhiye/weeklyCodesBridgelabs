@@ -1,0 +1,62 @@
+[
+  {
+    "name": "rice",
+    "totalPrice": 1200
+  },
+  {
+    "name": "wheat",
+    "totalPrice": 1960
+  },
+  {
+    "name": "soap",
+    "totalPrice": 375
+  },
+  {
+    "name": "mixture",
+    "totalPrice": 456
+  },
+  {
+    "name": "facewash",
+    "totalPrice": 360
+  },
+  {
+    "name": "waterBottle",
+    "totalPrice": 80
+  },
+  {
+    "name": "fridge",
+    "totalPrice": 20000
+  },
+  {
+    "name": "kuchh",
+    "totalPrice": 2025
+  },
+  {
+    "name": "pulse",
+    "totalPrice": 2025
+  },
+  {
+    "name": "pulse",
+    "totalPrice": 2025
+  },
+  {
+    "name": "pulse",
+    "totalPrice": 2025
+  },
+  {
+    "name": "pulse",
+    "totalPrice": 2025
+  },
+  {
+    "name": "pulse",
+    "totalPrice": 2025
+  },
+  {
+    "name": "pulse",
+    "totalPrice": 2025
+  },
+  {
+    "name": "pulse",
+    "totalPrice": 2025
+  }
+]

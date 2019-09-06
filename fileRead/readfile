@@ -1,0 +1,20 @@
+ fs.readFile('./jsonFiles/temp.json', 'utf8', (err, jsonString) => {
+        if (err) {
+            console.log("Error reading file from disk:", err)
+            return
+        }
+        try {
+            this.item = JSON.parse(jsonString);
+            console.log("The price of rice is: ", this.item.rice[0]);
+        } catch(err) {
+            console.log('Error parsing JSON string:', err);
+        }
+        });
+
+
+    fs.writeFile("outputGrocery.json", data, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("File saved successfully!");
+});

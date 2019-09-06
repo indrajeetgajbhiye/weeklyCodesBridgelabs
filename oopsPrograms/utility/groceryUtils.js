@@ -43,7 +43,7 @@ class JsonData {
  * @description get the json data parsed as striung objects
  */
         var inventory = JSON.parse(rawdata);
-        for(var i=0;i<inventory.length;i++){
+        for(var i=0;i<num;i++){
             console.log("We have "+inventory[i].weight+"kg of "+ inventory[i].name +" selling at "+inventory[i].priceperkg+" Rupees per kg");       
         }
         return inventory;

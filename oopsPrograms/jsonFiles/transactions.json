@@ -1,0 +1,52 @@
+[
+  {
+    "stockName": "Reliance",
+    "sharePrice": 1193.4,
+    "numberOfShares": 100
+  },
+  {
+    "stockName": "Rcom",
+    "sharePrice": 0.7,
+    "numberOfShares": 1000
+  },
+  {
+    "stockName": "Tata Motors",
+    "sharePrice": 118.35,
+    "numberOfShares": 250
+  },
+  {
+    "stockName": "TCS",
+    "sharePrice": 2215.95,
+    "numberOfShares": 50
+  },
+  {
+    "stockName": "Capgemini",
+    "sharePrice": 113.7,
+    "numberOfShares": 2000
+  },
+  {
+    "stockName": "Bajaj",
+    "sharePrice": 2750.6,
+    "numberOfShares": 3000
+  },
+  {
+    "stockName": "Google LLP",
+    "sharePrice": 86953.42,
+    "numberOfShares": 5
+  },
+  {
+    "stockName": "Facebook",
+    "sharePrice": 13629,
+    "numberOfShares": 20
+  },
+  {
+    "stockName": "JPMC",
+    "sharePrice": 112,
+    "numberOfShares": 50
+  },
+  {
+    "stockName": "Disney",
+    "sharePrice": 10000,
+    "numberOfShares": 50
+  }
+]

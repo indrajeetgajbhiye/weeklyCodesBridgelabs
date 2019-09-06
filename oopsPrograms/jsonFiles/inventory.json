@@ -1,0 +1,61 @@
+[{
+    "name" : "rice",
+    "quantity": 30,
+    "price": 40
+},{
+    "name" : "wheat",
+    "quantity" : 56,
+    "price" : 35
+},{
+    "name" : "soap",
+    "quantity" : 25,
+    "price" : 15
+},{
+    "name" : "mixture",
+    "quantity" : 24,
+    "price" : 19
+},{
+    "name" : "facewash",
+    "quantity" : 2,
+    "price" : 180
+},{
+    "name" : "waterBottle",
+    "quantity" : 2,
+    "price" : 40
+},{
+    "name" : "fridge",
+    "quantity" : 2,
+    "price" : 10000
+},{
+    "name" : "kuchh",
+    "quantity" : 45,
+    "price" : 45
+},{
+    "name" : "pulse",
+    "quantity" : 45,
+    "price" : 45
+},{
+    "name" : "pulse",
+    "quantity" : 45,
+    "price" : 45
+},{
+    "name" : "pulse",
+    "quantity" : 45,
+    "price" : 45
+},{
+    "name" : "pulse",
+    "quantity" : 45,
+    "price" : 45
+},{
+    "name" : "pulse",
+    "quantity" : 45,
+    "price" : 45
+},{
+    "name" : "pulse",
+    "quantity" : 45,
+    "price" : 45
+},{
+    "name" : "pulse",
+    "quantity" : 45,
+    "price" : 45
+}]
