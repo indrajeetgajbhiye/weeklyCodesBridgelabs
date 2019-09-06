@@ -18,25 +18,5 @@
   {
     "nameOfStock": "Capgemini",
     "totalPrice": 227400
-  },
-  {
-    "nameOfStock": "Bajaj",
-    "totalPrice": 8251800
-  },
-  {
-    "nameOfStock": "Google LLP",
-    "totalPrice": 434767.1
-  },
-  {
-    "nameOfStock": "Facebook",
-    "totalPrice": 272580
-  },
-  {
-    "nameOfStock": "JPMC",
-    "totalPrice": 5600
-  },
-  {
-    "nameOfStock": "Disney",
-    "totalPrice": 500000
   }
 ]
