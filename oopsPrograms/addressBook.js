@@ -44,6 +44,7 @@ function check() {
         return false;
 }
 class Address {
+    
 
     constructor() {
         this.addressb;
