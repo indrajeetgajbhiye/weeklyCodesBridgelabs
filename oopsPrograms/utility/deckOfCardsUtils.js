@@ -16,9 +16,10 @@ function deckOfCards(arr1, arr2){
     }
     var n = arr1.length * arr2.length;
     var arr3 = new Array(n);
+    var elementArray = [2];
     for (var i = 0; i < arr2.length; i++) {
         for (var j = 0; j < arr1.length; j++) {
-            arr3[arr1.length * i + j] = arr2[i] + arr1[j];
+            arr3[arr1.length * i + j] = arr2[i] + " " +arr1[j];
         }
     }
     for (var j = 0; j < 9; j++) {
@@ -72,6 +73,7 @@ function deckOfCards(arr1, arr2){
     }
     return finalArray;
 }
+
 module.exports ={
     shuffle, 
     deckOfCards

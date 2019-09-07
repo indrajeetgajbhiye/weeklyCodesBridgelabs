@@ -28,7 +28,8 @@ function addAppointment(){
         console.log("Invalid name!");
         return false;
     }
-    if(checkAndShift(Name, ID, mobNo, Age, Appointed_To) != 1){
+    var n = checkAndShift(Name, ID, mobNo, Age, Appointed_To);
+    if(n != 1){
         clinique.Patients.push({
             "Name": Name,
             "ID": ID,
@@ -36,10 +37,9 @@ function addAppointment(){
             "Age": Age,
             "Appointed_To": Appointed_To
         })
+        fs.writeFileSync('./jsonFiles/cliniqManagement.json', JSON.stringify(clinique, null, 2));
+        console.log("Appointment Added Successfully...");
     }
-    // console.log("Appointment Added Successfully...");
-    fs.writeFileSync('./jsonFiles/cliniqManagement.json', JSON.stringify(clinique, null, 2));
-    console.log("Appointment Added Successfully...");
 }
 function printList(){
     console.log(clinique);
@@ -130,11 +130,11 @@ function searchList(){
     }
 }
 function checkAndShift(Name, ID, mobNo, Age, Appointed_To){
-    var newData = fs.readFileSync('./jsonFiles/cliniqManagement.json', 'utf-8')
+    var newData = fs.readFileSync('./jsonFiles/upcomingAppointments.json', 'utf-8');
     var cliniqueStacked = JSON.parse(newData);
     var count = 0;
-    for(var i =0; i<clinique.Doctors.length; i++){
-        if(Appointed_To == clinique.Doctors.name){
+    for(var i =0; i<clinique.Patients.length; i++){
+        if(Appointed_To == clinique.Patients[i].Appointed_To){
             count++;
         }
     }
@@ -148,11 +148,12 @@ function checkAndShift(Name, ID, mobNo, Age, Appointed_To){
             "Appointed_To": Appointed_To,
             "Date" : (date_ob.getDate()+2)+'/'+date_ob.getMonth()+'/'+date_ob.getFullYear()
         });
-    }
-    fs.writeFile('./jsonFiles/upcomingAppointments.json', JSON.stringify(cliniqueStacked), function (err) {
+    console.log("Sorry! Doctor is busy your appointment is on", (date_ob.getDate()+2)+'/'+date_ob.getMonth()+'/'+date_ob.getFullYear());
+    fs.writeFile('./jsonFiles/upcomingAppointments.json', JSON.stringify(cliniqueStacked, null, 2), function (err) {
         if (err) throw err
     })
     return 1;
+    }
 }
 module.exports = {
     addAppointment,

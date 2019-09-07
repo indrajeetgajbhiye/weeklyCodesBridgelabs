@@ -3,7 +3,7 @@
     {
       "Name": "Dr. Indrajeet",
       "ID": 120,
-      "Specialization": "Doctor, Head of Diagnostic Medicine,",
+      "Specialization": "Head of Diagnostic Medicine,",
       "Availability": "Both"
     },
     {
@@ -73,6 +73,27 @@
       "mobNo": "9836744302",
       "Age": "24",
       "Appointed_To": "Dr. Indrajeet"
+    },
+    {
+      "Name": "jgdh",
+      "ID": 578,
+      "mobNo": "1478523690",
+      "Age": "24",
+      "Appointed_To": "Dr. Indrajeet"
+    },
+    {
+      "Name": "prabhnoor",
+      "ID": 575,
+      "mobNo": "9874563210",
+      "Age": "21",
+      "Appointed_To": "Dr. Indrajeet"
+    },
+    {
+      "Name": "Parry bro",
+      "ID": 922,
+      "mobNo": "7548963212",
+      "Age": "21",
+      "Appointed_To": "Dr. Parry"
     }
   ]
 }
