@@ -32,18 +32,18 @@ class JsonData {
  * @function read()
  * @description to read a json file 
  */
-    read(){
+    read(path){
 /**
  * @let rawdata 
  * @description get all the data as unformatted data in rawdata from json file
  */
-        let rawdata = fs.readFileSync('./jsonFiles/food.json');
+        let rawdata = fs.readFileSync(path);
 /**
  * @var {} inventory 
  * @description get the json data parsed as striung objects
  */
         var inventory = JSON.parse(rawdata);
-        for(var i=0;i<num;i++){
+        for(var i=0;i<inventory.length;i++){
             console.log("We have "+inventory[i].weight+"kg of "+ inventory[i].name +" selling at "+inventory[i].priceperkg+" Rupees per kg");       
         }
         return inventory;
@@ -54,7 +54,7 @@ class JsonData {
  * @param {*} inventory 
  * @description write the data in the given file in format
  */
-    write(newData, inventory){
+    write(path, newData, inventory){
         for(var i=0;i<inventory.length;i++){
 /**
  * @description creating the new JsonData Object in newData[i] 
@@ -67,11 +67,14 @@ class JsonData {
  * @description stringyfy the newData in outputString
  */
         var outputString=JSON.stringify(newData, null, 2);
-        fs.writeFile("./jsonFiles/outputFood.json",outputString, function(err) {
+        fs.writeFile(path ,outputString, function(err) {
             if(err) {
                 return console.log(err);
             }
-            console.log("File saved successfully!");
+            else {
+                console.log("File saved successfully!");
+                return true;
+            }
         });
     }
 };

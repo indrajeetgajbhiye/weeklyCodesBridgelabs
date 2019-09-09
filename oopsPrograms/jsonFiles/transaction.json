@@ -1,0 +1,259 @@
+[
+  {
+    "stock": "Transaction List",
+    "amount": "",
+    "type": ""
+  },
+  {
+    "stock": "Tata",
+    "type": "buy",
+    "amount": 100,
+    "time": "Sat Sep 07 2019 17:56:34 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 100,
+    "time": "Sat Sep 07 2019 18:03:04 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Sat Sep 07 2019 18:23:05 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "sell",
+    "amount": 50,
+    "time": "Sat Sep 07 2019 18:29:52 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "sell",
+    "amount": 50,
+    "time": "Sat Sep 07 2019 18:36:37 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "sell",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 11:09:04 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 13:45:27 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 13:47:58 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 13:48:07 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 13:54:01 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 13:57:28 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 13:57:32 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Airtel",
+    "type": "buy",
+    "amount": "150",
+    "time": "Mon Sep 09 2019 14:02:44 GMT+0530 (IST)"
+  },
+  {
+    "stock": "ICICI",
+    "type": "sell",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 14:13:08 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 14:18:25 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 14:18:56 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 15:55:13 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 15:55:22 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 15:55:47 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "sell",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 15:56:21 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Infosys",
+    "type": "sell",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 15:56:25 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HSBC",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 16:00:16 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HSBC",
+    "type": "buy",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 16:01:57 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HSBC",
+    "type": "sell",
+    "amount": 100,
+    "time": "Mon Sep 09 2019 16:04:42 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Airtel",
+    "type": "sell",
+    "amount": 100,
+    "time": "Mon Sep 09 2019 16:05:13 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Tata",
+    "type": "sell",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 16:06:48 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Capgemini",
+    "type": "sell",
+    "amount": 100,
+    "time": "Mon Sep 09 2019 16:13:37 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Capgemini",
+    "type": "sell",
+    "amount": 100,
+    "time": "Mon Sep 09 2019 16:13:40 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Capgemini",
+    "type": "sell",
+    "amount": 2650,
+    "time": "Mon Sep 09 2019 16:14:52 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Capgemini",
+    "type": "sell",
+    "amount": 2600,
+    "time": "Mon Sep 09 2019 16:18:21 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HSBC",
+    "type": "buy",
+    "amount": 200,
+    "time": "Mon Sep 09 2019 16:18:33 GMT+0530 (IST)"
+  },
+  {
+    "stock": "ION",
+    "type": "buy",
+    "amount": 200,
+    "time": "Mon Sep 09 2019 16:19:55 GMT+0530 (IST)"
+  },
+  {
+    "stock": "ION",
+    "type": "sell",
+    "amount": 100,
+    "time": "Mon Sep 09 2019 16:20:10 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Reliance",
+    "type": "buy",
+    "amount": 103,
+    "time": "Mon Sep 09 2019 16:20:27 GMT+0530 (IST)"
+  },
+  {
+    "stock": "ION",
+    "type": "buy",
+    "amount": 250,
+    "time": "Mon Sep 09 2019 16:22:40 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HSBC",
+    "type": "buy",
+    "amount": 100,
+    "time": "Mon Sep 09 2019 16:26:35 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HSBC",
+    "type": "sell",
+    "amount": 50,
+    "time": "Mon Sep 09 2019 16:26:45 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HDFC",
+    "type": "buy",
+    "amount": 5002,
+    "time": "Mon Sep 09 2019 16:27:18 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Compaq",
+    "type": "buy",
+    "amount": 500,
+    "time": "Mon Sep 09 2019 16:49:20 GMT+0530 (IST)"
+  },
+  {
+    "stock": "Capgemini",
+    "type": "sell",
+    "amount": 500,
+    "time": "Mon Sep 09 2019 16:51:02 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HSBC",
+    "type": "buy",
+    "amount": 12,
+    "time": "Mon Sep 09 2019 17:35:27 GMT+0530 (IST)"
+  },
+  {
+    "stock": "HSBC",
+    "type": "buy",
+    "amount": 18,
+    "time": "Mon Sep 09 2019 17:36:34 GMT+0530 (IST)"
+  }
+]

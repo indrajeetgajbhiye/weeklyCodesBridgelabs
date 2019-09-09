@@ -1,6 +1,5 @@
 var readlineSync = require('readline-sync');
 var utils = require('./utility/cliniqManagementUtils');
-var fs = require('fs');
 function clinique() {
         do {
             console.log("1.ADD Appointment\n2.PRINTLIST\n3.SEARCH\n4.EXIT");

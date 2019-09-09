@@ -1,37 +1,75 @@
-[{
-    "name": "Indrajeet",
-    "details":[{
-        "Name": "Hithesh",
-        "LastName": "Gowda",
-        "Address": {
-            "Street": "23",
-            "City": "Bangalore",
-            "State": "Karnataka",
-            "Nationality": "Indian",
-            "Zip": "573201",
-            "PhoneNum": "9020103040"
-        }  
-    },{
-        "Name": "Divya",
-        "LastName": "Janani",
-        "Address": {
-            "Street": "22",
-            "City": "Bangalore",
-            "State": "Karnataka",
-            "Nationality": "Indian",
-            "Zip": "560060",
-            "PhoneNum": "7020103050"
+{
+    "Person": [
+        {
+            "Name": "man",
+            "LastName": "mum",
+            "Address": {
+                "Street": "23",
+                "City": "Mumbai",
+                "State": "mix",
+                "Nationality": "Indian",
+                "Zip": "573201",
+                "PhoneNum": "9020103040"
+            }
+        },
+        {
+            "Name": "Divya",
+            "LastName": "Janani",
+            "Address": {
+                "Street": "22",
+                "City": "Bangalore",
+                "State": "Karnataka",
+                "Nationality": "Indian",
+                "Zip": "560060",
+                "PhoneNum": "7020103050"
+            }
+        },
+        {
+            "Name": "Praju",
+            "LastName": "Gowda",
+            "Address": {
+                "Street": "21",
+                "City": "Hassan",
+                "State": "Karnataka",
+                "Nationality": "Indian",
+                "Zip": "402010",
+                "PhoneNum": "9010407080"
+            }
+        },
+        {
+            "Name": "indra",
+            "LastName": "lkja",
+            "Address": {
+                "Street": "jjhsg11111",
+                "City": "kjd",
+                "State": "ljkd",
+                "Zip": "123456",
+                "PhoneNum": "1234567890"
+            }
+        },
+        {
+            "Name": "kjhd",
+            "LastName": "likjd",
+            "Address": {
+                "Street": "india",
+                "City": "kjd",
+                "State": "kjbd",
+                "Nationality": "India",
+                "Zip": "123456",
+                "PhoneNum": "1234567890"
+            }
+        },
+        {
+            "Name": "jdjs]\\",
+            "LastName": "jsjs",
+            "Address": {
+                "Street": "jhghsj",
+                "City": "ggsh",
+                "State": "sjsgvs",
+                "Nationality": "India",
+                "Zip": "123456",
+                "PhoneNum": "1234567890"
+            }
         }
-    },{
-        "Name": "Praju",
-        "LastName": "Gowda",
-        "Address": {
-            "Street": "21",
-            "City": "Hassan",
-            "State": "Karnataka",
-            "Nationality": "Indian",
-            "Zip": "402010",
-            "PhoneNum": "9010407080"
-        }
-    }]
-}]
+    ]
+}

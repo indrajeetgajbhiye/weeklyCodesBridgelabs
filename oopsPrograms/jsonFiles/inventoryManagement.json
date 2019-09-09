@@ -1,0 +1,22 @@
+[
+  {
+    "stockName": "mango",
+    "Number_of_Kgs": "15",
+    "Price": "50"
+  },
+  {
+    "stockName": "apple",
+    "Number_of_Kgs": "45",
+    "Price": "2"
+  },
+  {
+    "stockName": "hhh",
+    "Number_of_Kgs": "45",
+    "Price": "12"
+  },
+  {
+    "stockName": "kjdd",
+    "Number_of_Kgs": "12",
+    "Price": "75"
+  }
+]

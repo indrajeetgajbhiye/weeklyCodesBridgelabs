@@ -21,7 +21,7 @@ var grocery = require("./utility/groceryUtils");
  * @var {} newData
  * @description array of 3 elements is created
  */
-var newData = [3];
+var newData = new Array();
 /**
  * @var {object} data
  * @description creating the object from class JsonData  
@@ -31,8 +31,8 @@ var data = new grocery.JsonData();
  * @var {object array} inventory 
  * @description get all the data after reading the JSON file in inventory  
  */
-var inventory  = data.read();
+var inventory  = data.read('./jsonFiles/food.json');
 /**
  * @description write the data in another json file
  */
-data.write(newData, inventory);
+data.write("./jsonFiles/outputFood.json", newData, inventory);
