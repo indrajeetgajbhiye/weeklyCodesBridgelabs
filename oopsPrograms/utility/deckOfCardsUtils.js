@@ -42,10 +42,22 @@ function mapOrder(array, order) {
     });
 	return array;
 };
+function mapOrder1(array, order) {
+	array.sort(function (a, b) {
+		var A = a[1], B = b[1];
+		if (order.indexOf(A) > order.indexOf(B)) {
+			return 1;
+		} else {
+			return -1;
+		}
+    });
+	return array;
+};
 
 module.exports ={
     shuffle,            
     deckOfCards,
-    mapOrder
+    mapOrder,
+    mapOrder1
 }
 

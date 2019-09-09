@@ -21,8 +21,13 @@ for (var i = 0; i < 4; i++) {
 	console.log(finalCards[i]);
 }
 for(var i =0; i<4; i++){
-finalCards[i]= sort.mapOrder(finalCards[i], arr2)
+	finalCards[i]= sort.mapOrder1(finalCards[i], arr1)
 }
+console.log(finalCards);
+for(var i =0; i<4; i++){
+	finalCards[i]= sort.mapOrder(finalCards[i], arr2)
+}
+
 for(var i =0 ; i<4; i++){
 	console.log("Cards sorted by player",i+1);
 	console.log(finalCards[i]);
