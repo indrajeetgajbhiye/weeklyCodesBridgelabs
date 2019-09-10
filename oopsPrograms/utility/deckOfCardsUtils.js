@@ -1,3 +1,24 @@
+/*******************************************************************************************************
+ * Execution    :   default node            terminal> node deckOfCardsQueue.js
+ * 
+ * Purpose      :   to learn read and write through json object
+ * 
+ * @description
+ * 
+ * @file        :   deckOfCardsUtils.js
+ * @overview    :   to read the data from one json file write customised data in another json file
+ *                  
+ * @author      :   Indrajeet Gajbhiye indrajeetgajbhiye@gmail.com
+ * @version     :   1.0
+ * @since       :   10-08-2019
+*******************************************************************************************************/
+/**
+ * 
+ * @param {array} arr1 
+ * @param {array} arr2 
+ * @param {array} arr3 
+ * @description to shuffle the arr3 to generate the random array 
+ */
 function shuffle(arr1, arr2, arr3) {
     var n = arr1.length * arr2.length;
     for (var i = 0; i < n; i++) {
@@ -9,6 +30,11 @@ function shuffle(arr1, arr2, arr3) {
     
     return arr3;
 }
+/**
+ * 
+ * @param {array} arr1 
+ * @param {array} arr2 
+ */
 function deckOfCards(arr1, arr2){
     var finalArray = new Array(4);
     for(var i =0; i < 4; i++){
@@ -16,6 +42,9 @@ function deckOfCards(arr1, arr2){
     }
     var n = arr1.length * arr2.length;
     var arr3 = new Array(n);
+/**
+ * @description  generating the array of all the elements present in the arr1 and arr2
+ */
     for (var i = 0; i < arr2.length; i++) {
         for (var j = 0; j < arr1.length; j++) {
             arr3[arr1.length * i + j] =new Array(2);
@@ -23,6 +52,9 @@ function deckOfCards(arr1, arr2){
             arr3[arr1.length * i + j][1] = arr1[j];
         }
     }
+/**
+ * @description converting tha arr3 in two dimentional array
+ */
     arr3 = shuffle(arr1, arr2, arr3);
     for(var i  = 0; i<4;i++){
         for(var j = 0; j<9; j++){
@@ -31,6 +63,11 @@ function deckOfCards(arr1, arr2){
     }
     return finalArray;
   }
+/**
+ * 
+ * @param {array} array 
+ * @param {array} order 
+ */
 function mapOrder(array, order) {
 	array.sort(function (a, b) {
 		var A = a[0], B = b[0];

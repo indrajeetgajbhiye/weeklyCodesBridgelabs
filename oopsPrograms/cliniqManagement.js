@@ -1,3 +1,17 @@
+/*******************************************************************************************************
+ * Execution    :   default node            terminal> node grocery.js
+ * 
+ * Purpose      :   to learn read and write through json object
+ * 
+ * @description
+ * 
+ * @file        :   grocery.js
+ * @overview    :   to read the data from one json file write customised data in another json file
+ *                  
+ * @author      :   Indrajeet Gajbhiye indrajeetgajbhiye@gmail.com
+ * @version     :   1.0
+ * @since       :   06-08-2019
+*******************************************************************************************************/
 var readlineSync = require('readline-sync');
 var utils = require('./utility/cliniqManagementUtils');
 function clinique() {

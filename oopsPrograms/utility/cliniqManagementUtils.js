@@ -1,6 +1,8 @@
 var fs = require('fs');
 let readlineSync = require('readline-sync');
-var data = fs.readFileSync('./jsonFiles/cliniqManagement.json', 'utf-8')
+var upcomingAppoints = '../jsonFiles/upcomingAppointments.json';
+var filepath = '../jsonFiles/cliniqManagement.json';
+var data = fs.readFileSync(filepath, 'utf-8')
 var clinique = JSON.parse(data);
 nameRestriction = /[a-z]/ig;
 contactRestriction = /[0-9]/g;
@@ -10,23 +12,23 @@ function addAppointment(){
     var Name = readlineSync.question('Patient Name : ');
     if (nameRestriction.test(Name) == false) {
         console.log("Invalid name!");
-        return false;
+        this.addAppointment();
     }
     var ID = parseInt(Math.random() * 1000);
     var mobNo = readlineSync.question('Mobile Number : ');
     if (contactRestriction.test(mobNo) == false || mobNo.length != 10) {
         console.log("Invalid mobile number!");
-        return false;
+        this.addAppointment();
     }
     var Age = readlineSync.question('Age : ');
     if (contactRestriction.test(Age) == false) {
         console.log("Inappropriate age!");
-        return false;
+        this.addAppointment();
     }
     var Appointed_To = readlineSync.question('Whose Appointment you want : ');
     if (nameRestriction.test(Appointed_To) == false) {
         console.log("Invalid name!");
-        return false;
+        this.addAppointment();
     }
     var n = checkAndShift(Name, ID, mobNo, Age, Appointed_To);
     if(n != 1){
@@ -37,12 +39,14 @@ function addAppointment(){
             "Age": Age,
             "Appointed_To": Appointed_To
         })
-        fs.writeFileSync('./jsonFiles/cliniqManagement.json', JSON.stringify(clinique, null, 2));
+        fs.writeFileSync(filepath, JSON.stringify(clinique, null, 2));
         console.log("Appointment Added Successfully...");
+        return true;
     }
 }
 function printList(){
     console.log(clinique);
+    return true;
 }
 function searchList(){
     console.log("****SEARCH LIST******");
@@ -81,7 +85,7 @@ function searchList(){
         else if (option3 == 4) {
             var i = readlineSync.question('Availability : ');
             for (var key in clinique.Doctors) {
-                if (clinique.Doctors[key].Availability == i) {
+                if (clinique.Doctors[key].Availability == i || clinique.Doctors[key].Availability == "Both" ) {
                     console.log("****Doctor's Info****");
                     console.log(clinique.Doctors[key]);
                 }
@@ -128,9 +132,10 @@ function searchList(){
             }
         }
     }
+    return true;
 }
 function checkAndShift(Name, ID, mobNo, Age, Appointed_To){
-    var newData = fs.readFileSync('./jsonFiles/upcomingAppointments.json', 'utf-8');
+    var newData = fs.readFileSync(upcomingAppoints, 'utf-8');
     var cliniqueStacked = JSON.parse(newData);
     var count = 0;
     for(var i =0; i<clinique.Patients.length; i++){
@@ -149,7 +154,7 @@ function checkAndShift(Name, ID, mobNo, Age, Appointed_To){
             "Date" : (date_ob.getDate()+2)+'/'+date_ob.getMonth()+'/'+date_ob.getFullYear()
         });
     console.log("Sorry! Doctor is busy your appointment is on", (date_ob.getDate()+2)+'/'+date_ob.getMonth()+'/'+date_ob.getFullYear());
-    fs.writeFile('./jsonFiles/upcomingAppointments.json', JSON.stringify(cliniqueStacked, null, 2), function (err) {
+    fs.writeFile(upcomingAppoints, JSON.stringify(cliniqueStacked, null, 2), function (err) {
         if (err) throw err
     })
     return 1;

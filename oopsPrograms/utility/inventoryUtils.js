@@ -3,7 +3,8 @@ var readlineSync = require('readline-sync');
 /**
  * reading data from a json file
  */
-var data = fs.readFileSync('./jsonFiles/inventoryManagement.json');
+var filePath = './jsonFiles/inventoryManagement.json';
+var data = fs.readFileSync(filePath);
 console.log("Data in a json file is\n" + data);
 var arrayOfObjects = JSON.parse(data);
 console.log(" ");
@@ -45,13 +46,14 @@ function insertItem(num){
         /**
          * writing arrayOfObjects on json file
          */
-        fs.writeFileSync('./jsonFiles/inventoryManagement.json', JSON.stringify(arrayOfObjects, null , 2), 'utf-8', function () { console.log('done') });
+        fs.writeFileSync(filePath, JSON.stringify(arrayOfObjects, null , 2), 'utf-8', function () { console.log('done') });
         /**
          * reading json file after insertion
          */
     }
-    var data = fs.readFileSync('./jsonFiles/inventoryManagement.json', 'utf-8');
+    var data = fs.readFileSync(filePath, 'utf-8');
     console.log("after insertion data is\n" + data);
+    return true;
 }
 function deleteItem(del){
     var flag = 0;
@@ -71,14 +73,16 @@ function deleteItem(del){
         arrayOfObjects.forEach(element => {
             console.log(element);
         });
-        fs.writeFileSync('./jsonFiles/inventoryManagement.json', JSON.stringify(arrayOfObjects, null , 2), 'utf-8', function (err) {
+        fs.writeFileSync(filePath, JSON.stringify(arrayOfObjects, null , 2), 'utf-8', function (err) {
             if (err) throw err
             console.log('Done!');
         })
     }
     else {
         console.log('Data not Found');
+        return false;
     }
+    return true;
 }
 
 module.exports = {

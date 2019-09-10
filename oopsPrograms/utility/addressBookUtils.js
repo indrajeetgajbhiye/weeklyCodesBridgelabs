@@ -1,6 +1,6 @@
 let readlineSync = require('readline-sync');
 var fs = require('fs');
-var data = fs.readFileSync('./jsonFiles/addressBook.json');
+var data = fs.readFileSync('../jsonFiles/addressBook.json');
 var addressb = JSON.parse(data);
 nameRestriction = /[a-z]/ig;
 contactRestriction = /[0-9]/g;
@@ -11,39 +11,39 @@ class Address {
         var name = readlineSync.question("Please enter your first name: ");
         if (nameRestriction.test(name) == false) {
             console.log("Invalid name!");
-            return false;
+            this.createAddress();
         }
         var lastName = readlineSync.question("Please enter your last name: ");
         if (nameRestriction.test(lastName) == false) {
             console.log("Invalid name!");
-            return false;
+            this.createAddress();
         }
         console.log("***Address Info***");
         var street = readlineSync.question("Street: ");
         var city = readlineSync.question("City: ");
         if (nameRestriction.test(city) == false) {
             console.log("Invalid city name!");
-            return false;
+            this.createAddress();
         }
         var state = readlineSync.question("State: ");
         if (nameRestriction.test(state) == false) {
             console.log("Invalid state name!");
-            return false;
+            this.createAddress();
         }
         var nation = readlineSync.question("Nationality: ");
         if (nameRestriction.test(nation) == false) {
             console.log("Invalid Nationality!");
-            return false;
+            this.createAddress();
         }
         var zip = readlineSync.question("Zip code: ");
         if (contactRestriction.test(zip) == false || zip.length != 6) {
             console.log("Invalid zip code!");
-            return false;
+            this.createAddress();
         }
         var phoneNum = readlineSync.question("Phone number: ");
         if (contactRestriction.test(phoneNum) == false || phoneNum.length != 10) {
             console.log("Invalid phone number!");
-            return false;
+            this.createAddress();
         }
         addressb.Person.push({
             "Name": name,
@@ -63,6 +63,7 @@ class Address {
         })
         console.log("Address updated succesfully!");
         console.log("Your information as per our record is: \r\n First Name: " + name + "\r\nLast Name: " + lastName + "\r\nStreet: " + street + "\r\nCity: " + city + "\r\nState: " + state + "\r\nNationality: " + nation);
+        return true;
     }
     compare1(a, b) {
         if (a.Name.toLowerCase() < b.Name.toLowerCase()) {

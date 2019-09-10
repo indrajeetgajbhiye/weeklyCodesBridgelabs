@@ -18,51 +18,51 @@ nameRestriction = /[a-z]/ig;
 contactRestriction = /[0-9]/g;
 function inventoryMenu() {
     console.log(" ");
-    console.log("Inventory Management-->");//menue
+    console.log("Inventory Management-->");//menu
     console.log(" 1: Insert\n 2: Delete\n 3: Exit");
-    /**
-     * asking user to enter the choice
-     */
+/**
+ * asking user to enter the choice
+ */
     try {
         var choice = readlineSync.question("Please enter your choice: ");
         if (choice > 3 || isNaN(choice) || choice < 1) throw "invalid input"
-        /**
-         * Insert Operation
-         */
+/**
+ * Insert Operation
+ */
         if (choice == '1') {
             
             try {
                 var num = readlineSync.question("Enter the number of stocks ->");
                 if (isNaN(num)) throw "Invalid Input";
-                if(contactRestriction.test(num)== false) throw "Invalid Input";
+                if(contactRestriction.test(num) == false) throw "Invalid Input";
             } catch (err) {
                 console.log(err);
             }
             item.insertItem(num);
             inventoryMenu();
         }
-        /**
-         * Delete Operation
-         */
+/**
+ * Delete Operation
+ */
         else if (choice == '2') {
-            /**
-             * asking user to enter product name
-             */
+/**
+ * asking user to enter product name
+ */
             try {
                 var del = readlineSync.question("Please enter the name of item you want to delete from the inventory: ");
                 if(nameRestriction.test(del)== false) throw "Invalid Input";
             } catch (err) {
                 console.log(err);
             }
-            /**
-             * deleting item from the jason file
-             */
+/**
+ * deleting item from the jason file
+ */
             item.deleteItem(del);
             inventoryMenu();
         }
-        /**
-         * Exit from stock
-         */
+/**
+ * Exit from stock
+ */
         else (choice == '3')
         {
             process.exit();
@@ -75,3 +75,6 @@ function inventoryMenu() {
  * calling function
  */
 inventoryMenu();
+module.exports = {
+    inventoryMenu,
+}
